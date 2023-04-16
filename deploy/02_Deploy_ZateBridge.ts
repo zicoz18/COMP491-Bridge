@@ -20,8 +20,11 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     NATIVE_MINTER_ADDRESS
   )) as NativeMinterInterface
 
-  const allowBridgeToNativeMintTx = await nativeMinter.setEnabled(bridgeDeploymentResult.address)
-  await allowBridgeToNativeMintTx.wait()
+  const isAllowed = (await nativeMinter.readAllowList(bridgeDeploymentResult.address)).toNumber()
+  if (isAllowed === 0) {
+    const allowBridgeToNativeMintTx = await nativeMinter.setEnabled(bridgeDeploymentResult.address)
+    await allowBridgeToNativeMintTx.wait()
+  }
 }
 export default func
 func.tags = ['zateBridge']
