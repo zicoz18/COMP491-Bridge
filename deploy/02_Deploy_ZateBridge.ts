@@ -1,6 +1,6 @@
 import { HardhatRuntimeEnvironment } from 'hardhat/types'
 import { DeployFunction } from 'hardhat-deploy/types'
-import { NATIVE_MINTER_ADDRESS } from '../constants/nativeMinterAddress'
+import { NATIVE_MINTER_ADDRESS } from '../constants'
 import { NativeMinterInterface } from '../typechain-types/contracts/Token/INativeMinter.sol/NativeMinterInterface'
 
 const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {

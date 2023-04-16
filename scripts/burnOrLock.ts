@@ -8,7 +8,7 @@ const main = async () => {
   const adminSigner = signers.filter((signer) => signer.address === accounts.admin)[0]
   const userSigner = signers.filter((signer) => signer.address === accounts.user)[0]
 
-  const amount = ethers.utils.parseEther('3')
+  const amount = ethers.utils.parseEther('5')
 
   if (chainId === '43113') {
     const avaxERC20Deployment = await deployments.get('AvaxERC20')

@@ -7,6 +7,7 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.3",
     "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
     "hardhat-deploy": "^0.11.26",
     "solmate": "^6.7.0"
   }
