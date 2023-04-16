@@ -3,7 +3,7 @@ pragma solidity ^0.8.7;
 
 import "../Token/INativeMinter.sol";
 
-contract SubnetBridge {
+contract ZateBridge {
   /* Selector to call the mintNativeCoin function of INativeMinter */
   bytes4 private constant NATIVE_MINT_SELECTOR =
     bytes4(keccak256(bytes("mintNativeCoin(address,uint256)")));

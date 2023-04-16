@@ -1,0 +1,289 @@
+{
+  "address": "0x1e848B1F0644d578840147D8c7F4B1E5626c7EEA",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "ERC20TransferFail",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ERC20TransferFromFail",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        }
+      ],
+      "name": "NonceAlreadyProcessed",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "caller",
+          "type": "address"
+        }
+      ],
+      "name": "NotAdmin",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "time",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "internalType": "enum AvaxBridge.Type",
+          "name": "transferType",
+          "type": "uint8"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "admin",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "avaxERC20",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "lock",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "nonce",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "nonceToIsProcessed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "subnetNonce",
+          "type": "uint256"
+        }
+      ],
+      "name": "release",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_admin",
+          "type": "address"
+        }
+      ],
+      "name": "setAdmin",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x3eb7d083d72a7e5de708ec36db26ad3168ec35de438275a7cb0e8f019e40e7f0",
+  "receipt": {
+    "to": null,
+    "from": "0x3A17045d7db4d825477CeF64cbb9b9a903F93031",
+    "contractAddress": "0x1e848B1F0644d578840147D8c7F4B1E5626c7EEA",
+    "transactionIndex": 0,
+    "gasUsed": "710140",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x160a38c48596f7da64bcd6ba47fbeaba0a6af7d86117bbad8a4b8730d1beb79f",
+    "transactionHash": "0x3eb7d083d72a7e5de708ec36db26ad3168ec35de438275a7cb0e8f019e40e7f0",
+    "logs": [],
+    "blockNumber": 20978058,
+    "cumulativeGasUsed": "710140",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x49B7D46558308d507AaDc1575e919D5eBF283dFf"
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "8f5c745b976fb19bf57ea2f13e5792a3",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_token\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"ERC20TransferFail\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"ERC20TransferFromFail\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"nonce\",\"type\":\"uint256\"}],\"name\":\"NonceAlreadyProcessed\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"caller\",\"type\":\"address\"}],\"name\":\"NotAdmin\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"time\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"nonce\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"enum AvaxBridge.Type\",\"name\":\"transferType\",\"type\":\"uint8\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"admin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"avaxERC20\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"lock\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"nonce\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"nonceToIsProcessed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"subnetNonce\",\"type\":\"uint256\"}],\"name\":\"release\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_admin\",\"type\":\"address\"}],\"name\":\"setAdmin\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Bridge/AvaxBridge.sol\":\"AvaxBridge\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Bridge/AvaxBridge.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.7;\\n\\nimport \\\"../Token/IERC20.sol\\\";\\n\\ncontract AvaxBridge {\\n  /* Selector to call the transfer function of an ERC20 */\\n  bytes4 private constant TRANSFER_SELECTOR =\\n    bytes4(keccak256(bytes(\\\"transfer(address,uint256)\\\")));\\n\\n  /* Selector to call the transferFrom function of an ERC20 */\\n  bytes4 private constant TRANSFER_FROM_SELECTOR =\\n    bytes4(keccak256(bytes(\\\"transferFrom(address,address,uint256)\\\")));\\n\\n  /* Represents the ERC20 token */\\n  address public immutable avaxERC20;\\n\\n  /* Admin of the contract that is able to call `release()` */\\n  address public admin;\\n\\n  /* Gets incremented with each `lock()`, indicates the transferCount\\n    and prevents double processing the event */\\n  uint public nonce;\\n\\n  /* Mapping to hold whether nonce is processed or not */\\n  mapping(uint => bool) public nonceToIsProcessed;\\n\\n  /* Allows us to indicate whether it is a `release()` or `lock()` when emitting an event */\\n  enum Type {\\n    Release,\\n    Lock\\n  }\\n\\n  error NonceAlreadyProcessed(uint nonce);\\n  error ERC20TransferFail();\\n  error ERC20TransferFromFail();\\n  error NotAdmin(address caller);\\n  /*\\n        Event that is emitted with both `release()` and `lock()`\\n        Relayer listens to events emitted by `lock()`\\n        Potential frontend application may want to listen to events emitted by `release()`\\n    */\\n  event Transfer(\\n    address from,\\n    address to,\\n    uint amount,\\n    uint time,\\n    uint nonce,\\n    Type indexed transferType\\n  );\\n\\n  /* Modifier to allow some functions to be only called by admin */\\n  modifier onlyAdmin() {\\n    _onlyAdmin();\\n    _;\\n  }\\n\\n  function _onlyAdmin() private view {\\n    if (msg.sender != admin) {\\n      revert NotAdmin(msg.sender);\\n    }\\n  }\\n\\n  /* Constructor that sets admin as the sender and initializes the ERC20 token inside contract */\\n  constructor(address _token) {\\n    admin = msg.sender;\\n    avaxERC20 = _token;\\n  }\\n\\n  /* Function to allow setting a new admin */\\n  function setAdmin(address _admin) external onlyAdmin {\\n    admin = _admin;\\n  }\\n\\n  function _safeTransfer(address token, address to, uint value) private {\\n    (bool success, bytes memory data) = token.call(\\n      abi.encodeWithSelector(TRANSFER_SELECTOR, to, value)\\n    );\\n    if (!(success && (data.length == 0 || abi.decode(data, (bool))))) {\\n      revert ERC20TransferFail();\\n    }\\n  }\\n\\n  function _safeTransferFrom(\\n    address token,\\n    address from,\\n    address to,\\n    uint value\\n  ) private {\\n    (bool success, bytes memory data) = token.call(\\n      abi.encodeWithSelector(TRANSFER_FROM_SELECTOR, from, to, value)\\n    );\\n    if (!(success && (data.length == 0 || abi.decode(data, (bool))))) {\\n      revert ERC20TransferFromFail();\\n    }\\n  }\\n\\n  /* Function that is called by the relayer to release some tokens after it is burned on the subnet */\\n  function release(\\n    address to,\\n    uint amount,\\n    uint subnetNonce\\n  ) external onlyAdmin {\\n    if (nonceToIsProcessed[subnetNonce]) {\\n      revert NonceAlreadyProcessed(subnetNonce);\\n    }\\n    nonceToIsProcessed[subnetNonce] = true;\\n\\n    /* Bridge sends locked tokens to the `to` address therefore, releases the tokens */\\n    // avaxERC20.transfer(to, amount);\\n    _safeTransfer(avaxERC20, to, amount);\\n\\n    emit Transfer(\\n      msg.sender,\\n      to,\\n      amount,\\n      block.timestamp,\\n      subnetNonce,\\n      Type.Release\\n    );\\n  }\\n\\n  /*\\n        Function that is called by the user to lock their tokens.\\n        Relayer listens to the event emitted by this function and if the nonce is not processed,\\n        it will call `mint()` of the SubnetBridge\\n    */\\n  function lock(address to, uint amount) external {\\n    /* Send ERC20 tokens from msg.send (user) to bridge to lock the tokens */\\n    /* Do not forget: sender should approve bridge address to do this */\\n    _safeTransferFrom(avaxERC20, msg.sender, address(this), amount);\\n\\n    /* Event that is emitted for relayer to process */\\n    emit Transfer(msg.sender, to, amount, block.timestamp, nonce, Type.Lock);\\n    /* Increment the nonce to prevent double counting */\\n    unchecked {\\n      ++nonce;\\n    }\\n  }\\n}\\n\",\"keccak256\":\"0x9a4b12bc8bdb7fcb7cc11f7978e820277652c01ce46241b7258746bf5168376b\",\"license\":\"MIT\"},\"contracts/Token/IERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.9;\\n\\ninterface IERC20 {\\n  function transfer(address to, uint256 amount) external returns (bool);\\n\\n  function transferFrom(\\n    address from,\\n    address to,\\n    uint256 amount\\n  ) external returns (bool);\\n}\\n\",\"keccak256\":\"0xd84ece9817ad0f0758f7e606f33106e027797da353fd336f97fe1ce3e1caa5fa\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60a060405234801561001057600080fd5b50604051610cd4380380610cd48339818101604052810190610032919061010f565b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508073ffffffffffffffffffffffffffffffffffffffff1660808173ffffffffffffffffffffffffffffffffffffffff16815250505061013c565b600080fd5b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b60006100dc826100b1565b9050919050565b6100ec816100d1565b81146100f757600080fd5b50565b600081519050610109816100e3565b92915050565b600060208284031215610125576101246100ac565b5b6000610133848285016100fa565b91505092915050565b608051610b6f610165600039600081816101650152818161026101526103250152610b6f6000f3fe608060405234801561001057600080fd5b506004361061007d5760003560e01c80637fe88d721161005b5780637fe88d72146100ea578063affed0e014610108578063f297be6614610126578063f851a440146101425761007d565b8063282d3fdf146100825780632e7981861461009e578063704b6c02146100ce575b600080fd5b61009c600480360381019061009791906107da565b610160565b005b6100b860048036038101906100b3919061081a565b6101f4565b6040516100c59190610862565b60405180910390f35b6100e860048036038101906100e3919061087d565b610214565b005b6100f261025f565b6040516100ff91906108b9565b60405180910390f35b610110610283565b60405161011d91906108e3565b60405180910390f35b610140600480360381019061013b91906108fe565b610289565b005b61014a6103a3565b60405161015791906108b9565b60405180910390f35b61018c7f00000000000000000000000000000000000000000000000000000000000000003330846103c7565b60018081111561019f5761019e610951565b5b7f27757542a5e1b9e8cef80f584e094d4eb63b9802f355c61b3640b71b618d5c8e338484426001546040516101d8959493929190610980565b60405180910390a2600160008154600101919050819055505050565b60026020528060005260406000206000915054906101000a900460ff1681565b61021c61052e565b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b7f000000000000000000000000000000000000000000000000000000000000000081565b60015481565b61029161052e565b6002600082815260200190815260200160002060009054906101000a900460ff16156102f457806040517fe5d143ad0000000000000000000000000000000000000000000000000000000081526004016102eb91906108e3565b60405180910390fd5b60016002600083815260200190815260200160002060006101000a81548160ff02191690831515021790555061034b7f000000000000000000000000000000000000000000000000000000000000000084846105c0565b6000600181111561035f5761035e610951565b5b7f27757542a5e1b9e8cef80f584e094d4eb63b9802f355c61b3640b71b618d5c8e3385854286604051610396959493929190610980565b60405180910390a2505050565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000808573ffffffffffffffffffffffffffffffffffffffff16604051806060016040528060258152602001610b156025913980519060200120868686604051602401610416939291906109d3565b604051602081830303815290604052907bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19166020820180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff83818316178352505050506040516104809190610a7b565b6000604051808303816000865af19150503d80600081146104bd576040519150601f19603f3d011682016040523d82523d6000602084013e6104c2565b606091505b50915091508180156104f057506000815114806104ef5750808060200190518101906104ee9190610abe565b5b5b610526576040517fe560521300000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b505050505050565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146105be57336040517f17a842420000000000000000000000000000000000000000000000000000000081526004016105b591906108b9565b60405180910390fd5b565b6000808473ffffffffffffffffffffffffffffffffffffffff166040518060400160405280601981526020017f7472616e7366657228616464726573732c75696e74323536290000000000000081525080519060200120858560405160240161062a929190610aeb565b604051602081830303815290604052907bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19166020820180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff83818316178352505050506040516106949190610a7b565b6000604051808303816000865af19150503d80600081146106d1576040519150601f19603f3d011682016040523d82523d6000602084013e6106d6565b606091505b509150915081801561070457506000815114806107035750808060200190518101906107029190610abe565b5b5b61073a576040517ff1568f9500000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b5050505050565b600080fd5b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b600061077182610746565b9050919050565b61078181610766565b811461078c57600080fd5b50565b60008135905061079e81610778565b92915050565b6000819050919050565b6107b7816107a4565b81146107c257600080fd5b50565b6000813590506107d4816107ae565b92915050565b600080604083850312156107f1576107f0610741565b5b60006107ff8582860161078f565b9250506020610810858286016107c5565b9150509250929050565b6000602082840312156108305761082f610741565b5b600061083e848285016107c5565b91505092915050565b60008115159050919050565b61085c81610847565b82525050565b60006020820190506108776000830184610853565b92915050565b60006020828403121561089357610892610741565b5b60006108a18482850161078f565b91505092915050565b6108b381610766565b82525050565b60006020820190506108ce60008301846108aa565b92915050565b6108dd816107a4565b82525050565b60006020820190506108f860008301846108d4565b92915050565b60008060006060848603121561091757610916610741565b5b60006109258682870161078f565b9350506020610936868287016107c5565b9250506040610947868287016107c5565b9150509250925092565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b600060a08201905061099560008301886108aa565b6109a260208301876108aa565b6109af60408301866108d4565b6109bc60608301856108d4565b6109c960808301846108d4565b9695505050505050565b60006060820190506109e860008301866108aa565b6109f560208301856108aa565b610a0260408301846108d4565b949350505050565b600081519050919050565b600081905092915050565b60005b83811015610a3e578082015181840152602081019050610a23565b60008484015250505050565b6000610a5582610a0a565b610a5f8185610a15565b9350610a6f818560208601610a20565b80840191505092915050565b6000610a878284610a4a565b915081905092915050565b610a9b81610847565b8114610aa657600080fd5b50565b600081519050610ab881610a92565b92915050565b600060208284031215610ad457610ad3610741565b5b6000610ae284828501610aa9565b91505092915050565b6000604082019050610b0060008301856108aa565b610b0d60208301846108d4565b939250505056fe7472616e7366657246726f6d28616464726573732c616464726573732c75696e7432353629a2646970667358221220dcd41e7827794195470902825e44a53f6e96347be4391d8afe26bbe73e8ad73e64736f6c63430008110033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061007d5760003560e01c80637fe88d721161005b5780637fe88d72146100ea578063affed0e014610108578063f297be6614610126578063f851a440146101425761007d565b8063282d3fdf146100825780632e7981861461009e578063704b6c02146100ce575b600080fd5b61009c600480360381019061009791906107da565b610160565b005b6100b860048036038101906100b3919061081a565b6101f4565b6040516100c59190610862565b60405180910390f35b6100e860048036038101906100e3919061087d565b610214565b005b6100f261025f565b6040516100ff91906108b9565b60405180910390f35b610110610283565b60405161011d91906108e3565b60405180910390f35b610140600480360381019061013b91906108fe565b610289565b005b61014a6103a3565b60405161015791906108b9565b60405180910390f35b61018c7f00000000000000000000000000000000000000000000000000000000000000003330846103c7565b60018081111561019f5761019e610951565b5b7f27757542a5e1b9e8cef80f584e094d4eb63b9802f355c61b3640b71b618d5c8e338484426001546040516101d8959493929190610980565b60405180910390a2600160008154600101919050819055505050565b60026020528060005260406000206000915054906101000a900460ff1681565b61021c61052e565b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b7f000000000000000000000000000000000000000000000000000000000000000081565b60015481565b61029161052e565b6002600082815260200190815260200160002060009054906101000a900460ff16156102f457806040517fe5d143ad0000000000000000000000000000000000000000000000000000000081526004016102eb91906108e3565b60405180910390fd5b60016002600083815260200190815260200160002060006101000a81548160ff02191690831515021790555061034b7f000000000000000000000000000000000000000000000000000000000000000084846105c0565b6000600181111561035f5761035e610951565b5b7f27757542a5e1b9e8cef80f584e094d4eb63b9802f355c61b3640b71b618d5c8e3385854286604051610396959493929190610980565b60405180910390a2505050565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000808573ffffffffffffffffffffffffffffffffffffffff16604051806060016040528060258152602001610b156025913980519060200120868686604051602401610416939291906109d3565b604051602081830303815290604052907bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19166020820180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff83818316178352505050506040516104809190610a7b565b6000604051808303816000865af19150503d80600081146104bd576040519150601f19603f3d011682016040523d82523d6000602084013e6104c2565b606091505b50915091508180156104f057506000815114806104ef5750808060200190518101906104ee9190610abe565b5b5b610526576040517fe560521300000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b505050505050565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146105be57336040517f17a842420000000000000000000000000000000000000000000000000000000081526004016105b591906108b9565b60405180910390fd5b565b6000808473ffffffffffffffffffffffffffffffffffffffff166040518060400160405280601981526020017f7472616e7366657228616464726573732c75696e74323536290000000000000081525080519060200120858560405160240161062a929190610aeb565b604051602081830303815290604052907bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19166020820180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff83818316178352505050506040516106949190610a7b565b6000604051808303816000865af19150503d80600081146106d1576040519150601f19603f3d011682016040523d82523d6000602084013e6106d6565b606091505b509150915081801561070457506000815114806107035750808060200190518101906107029190610abe565b5b5b61073a576040517ff1568f9500000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b5050505050565b600080fd5b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b600061077182610746565b9050919050565b61078181610766565b811461078c57600080fd5b50565b60008135905061079e81610778565b92915050565b6000819050919050565b6107b7816107a4565b81146107c257600080fd5b50565b6000813590506107d4816107ae565b92915050565b600080604083850312156107f1576107f0610741565b5b60006107ff8582860161078f565b9250506020610810858286016107c5565b9150509250929050565b6000602082840312156108305761082f610741565b5b600061083e848285016107c5565b91505092915050565b60008115159050919050565b61085c81610847565b82525050565b60006020820190506108776000830184610853565b92915050565b60006020828403121561089357610892610741565b5b60006108a18482850161078f565b91505092915050565b6108b381610766565b82525050565b60006020820190506108ce60008301846108aa565b92915050565b6108dd816107a4565b82525050565b60006020820190506108f860008301846108d4565b92915050565b60008060006060848603121561091757610916610741565b5b60006109258682870161078f565b9350506020610936868287016107c5565b9250506040610947868287016107c5565b9150509250925092565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b600060a08201905061099560008301886108aa565b6109a260208301876108aa565b6109af60408301866108d4565b6109bc60608301856108d4565b6109c960808301846108d4565b9695505050505050565b60006060820190506109e860008301866108aa565b6109f560208301856108aa565b610a0260408301846108d4565b949350505050565b600081519050919050565b600081905092915050565b60005b83811015610a3e578082015181840152602081019050610a23565b60008484015250505050565b6000610a5582610a0a565b610a5f8185610a15565b9350610a6f818560208601610a20565b80840191505092915050565b6000610a878284610a4a565b915081905092915050565b610a9b81610847565b8114610aa657600080fd5b50565b600081519050610ab881610a92565b92915050565b600060208284031215610ad457610ad3610741565b5b6000610ae284828501610aa9565b91505092915050565b6000604082019050610b0060008301856108aa565b610b0d60208301846108d4565b939250505056fe7472616e7366657246726f6d28616464726573732c616464726573732c75696e7432353629a2646970667358221220dcd41e7827794195470902825e44a53f6e96347be4391d8afe26bbe73e8ad73e64736f6c63430008110033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 28,
+        "contract": "contracts/Bridge/AvaxBridge.sol:AvaxBridge",
+        "label": "admin",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 30,
+        "contract": "contracts/Bridge/AvaxBridge.sol:AvaxBridge",
+        "label": "nonce",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 34,
+        "contract": "contracts/Bridge/AvaxBridge.sol:AvaxBridge",
+        "label": "nonceToIsProcessed",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_uint256,t_bool)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_uint256,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

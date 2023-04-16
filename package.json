@@ -2,10 +2,13 @@
   "name": "hardhat-project",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "ethers": "^5.7.2",
     "hardhat": "^2.14.0"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.3",
+    "dotenv": "^16.0.3",
+    "hardhat-deploy": "^0.11.26",
     "solmate": "^6.7.0"
   }
 }
